@@ -117,32 +117,6 @@ const App = () => {
       <div className='mt-8'>
         <h1 className='text-white sm:text-5xl text-4xl font-semibold'>Spin to win rewards</h1>
       </div>
-      <div
-        onClick={handleOpenListOfPrizeWon}
-        className='menu-list-prize-won fixed top-10 right-7 p-3 rounded-lg bg-[#1A2B57] text-white cursor-pointer'
-      >
-        List of Won Prizes
-      </div>
-      <AiOutlineMenu
-        onClick={handleOpenListOfPrizeWon}
-        className={'icon-menu-list-prize-won text-[30px] fixed top-10 right-7 cursor-pointer'}
-      />
-
-      <Modal
-        close={() => {
-          setConfigModal({
-            typeModal: 'notify',
-            openModal: false
-          })
-        }}
-        className={configModal.openModal ? '' : 'invisible opacity-0 scale-0 transition'}
-      >
-        {configModal.typeModal === 'notify' ? (
-          <WinningResult winningResult={winningResult} handleContinue={handleContinue} />
-        ) : (
-          <ListPrizeWon listPrizeWon={listPrizeWon} />
-        )}
-      </Modal>
       <LuckyWheel
         id={ID}
         styleRotate={styleRotate}
