@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu-list-prize-won {
+  display: block;
+}
+
+.icon-menu-list-prize-won {
+  display: none;
+}
+@media screen and (max-width: 840px) {
+  .menu-list-prize-won {
+    display: none;
+  }
+
+  .icon-menu-list-prize-won {
+    display: block;
+  }
+}
