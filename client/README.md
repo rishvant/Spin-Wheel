@@ -1,20 +1,10 @@
-# IIIT Una Official Website
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+# Spin Wheel
 
 ## Table of Contents
 
 - [About](#about)
 - [Usage](#usage)
 - [Scripts](#scripts)
-- [License](#license)
-- [Author](#author)
-
-## About
-
-Indian Institute of Information Technology Una (IIIT, Una) is one of the Indian Institutes of Information Technology located at Vill. Saloh, Teh. Haroli, Distt. Una Himachal Pradesh
-
-This is the official website of IIIT Una. It is built using [MERN].
 
 ## Usage
 
@@ -113,11 +103,3 @@ npm run dev
 npm run build
 
 ```
-
-## License
-
-[MIT](LICENSE)
-
-## Author
-
-[IIIT Una](https://iiitu.ac.in)
