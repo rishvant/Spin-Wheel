@@ -6,7 +6,7 @@ const RewardModal = ({displayModal, setDisplayModal, itemName}) => {
     return (
         <>
             <div>
-                <div className={`${styles.Modal} ${displayModal ? styles.Show : ""}`}>
+                <div className={`${styles.Modal} w-full ${displayModal ? styles.Show : ""}`}>
                     <div className="w-full p-5 flex flex-row justify-between border-2 border-transparent border-b-gray-400">
                         <h1 className="text-black text-3xl sm:text-4xl font-semibold" >Reward Details</h1>
                         <IoClose

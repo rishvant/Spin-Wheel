@@ -69,9 +69,7 @@ html {
 .Modal {
     position: fixed;
     height: fit-content;
-    bottom: -150vh;
     background-color: #fff;
-    width: 100%;
     box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.15);
     left: 0;
     transition: all 0.3s ease-out;

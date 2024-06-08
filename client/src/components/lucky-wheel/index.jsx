@@ -38,18 +38,15 @@ const LuckyWheel = ({ id, styleRotate, prizes, spinning, timeNeedleRotate }) => 
           ctx.moveTo(0, 0)
           ctx.rotate((((360 / num) * i - rotateDeg) * Math.PI) / 180)
           ctx.arc(0, 0, 250, 0, (2 * Math.PI) / num, false) // Radius
-          ctx.fillStyle = `${i%2==0? COLORS.primary_first : COLORS.primary_second}`
+          ctx.fillStyle = `${i % 2 == 0 ? COLORS.primary_first : COLORS.primary_second}`
           ctx.fill()
           ctx.lineWidth = 5
           ctx.strokeStyle = 'black'
           ctx.stroke()
           ctx.restore()
 
-          const htmlString = `<li class="luckywheel-item"><span style="transform: rotate(${i * turnNum}turn); width: ${
-            (100 / num) * 2 - 2
-          }%"><div  style="border: 1.5px solid ${
-            i % 2 === 0 ? COLORS.primary_first : COLORS.primary_second
-          }" class="luckywheel-item__content"><div class="text-container"><p class="name-prize" style="color: black; margin-top: 15px; font-size: large">${prizeList[i].name}</p></div></div></span></li>`
+          const htmlString = `<li class="luckywheel-item"><span style="transform: rotate(${i * turnNum}turn); width: ${(100 / num) * 2 - 2
+            }%"><div" class="luckywheel-item__content"><div class="text-container"><p class="name-prize">${prizeList[i].name}</p></div></div></span></li>`
 
           html.push(htmlString)
         }
@@ -81,21 +78,15 @@ const LuckyWheel = ({ id, styleRotate, prizes, spinning, timeNeedleRotate }) => 
   return (
     <div className='wrapper sm:w-[300px] md:w-[600px]' id='wrapper'>
       <section id='luckywheel' className='luckywheel'>
-        {/* <div className='luckywheel-btn'>
-          <div ref={arrowRef} className='luckywheel-btn-icon'>
-            <FaMapMarkerAlt className='text-[60px] text-[#1A2B57]' />
-          </div>
-        </div> */}
-
         <div
           className='luckywheel-container'
           style={
             styleRotate.deg !== 0
               ? {
-                  transform: `rotate(${styleRotate.deg}deg)`,
-                  transitionTimingFunction: styleRotate.timingFunc,
-                  transitionDuration: `${styleRotate.timeDuration}s`
-                }
+                transform: `rotate(${styleRotate.deg}deg)`,
+                transitionTimingFunction: styleRotate.timingFunc,
+                transitionDuration: `${styleRotate.timeDuration}s`
+              }
               : {}
           }
         >
@@ -112,4 +103,4 @@ const LuckyWheel = ({ id, styleRotate, prizes, spinning, timeNeedleRotate }) => 
   )
 }
 
-export default memo(LuckyWheel)
+export default memo(LuckyWheel);

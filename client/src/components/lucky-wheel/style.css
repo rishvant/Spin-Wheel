@@ -131,21 +131,21 @@
 
 @media screen and (max-width: 436px) and (min-width: 360px) {
   .luckywheel {
-    width: 350px;
-    height: 350px;
+    width: 345px;
+    height: 345px;
   }
 
   .luckywheel-container {
-    width: 330px;
-    height: 330px;
+    width: 305px;
+    height: 305px;
   }
 
   .luckywheel-item span {
     padding-top: 20px;
     top: -12px;
-    -webkit-transform-origin: 50% 175px;
-    -ms-transform-origin: 50% 175px;
-    transform-origin: 50% 175px;
+    -webkit-transform-origin: 50% 170px;
+    -ms-transform-origin: 50% 170px;
+    transform-origin: 50% 170px;
   }
 
   .luckywheel-logo {
@@ -167,25 +167,26 @@
   }
 
   .name-prize {
-    font-size: 10px;
+    margin-top: 12px;
+    font-size: 15px;
   }
 }
 
 @media screen and (max-width: 636px) and (min-width: 437px) {
   .luckywheel {
-    width: 400px;
-    height: 400px;
+    width: 370px;
+    height: 370px;
   }
   .luckywheel-container {
-    width: 380px;
-    height: 380px;
+    width: 350px;
+    height: 350px;
   }
 
   .luckywheel-item span {
     padding-top: 20px;
-    -webkit-transform-origin: 50% 200px;
-    -ms-transform-origin: 50% 200px;
-    transform-origin: 50% 200px;
+    -webkit-transform-origin: 50% 170px;
+    -ms-transform-origin: 50% 170px;
+    transform-origin: 50% 170px;
   }
 
   .luckywheel-logo {
@@ -207,6 +208,8 @@
   }
 
   .name-prize {
-    font-size: 10px;
+    font-size: 15px;
+    margin-right: 12px;
+    margin-top: -5px;
   }
 }

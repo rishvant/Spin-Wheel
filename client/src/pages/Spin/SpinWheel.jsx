@@ -113,7 +113,7 @@ const SpinWheel = () => {
   }, [indexPrizeWon])
 
   return (
-    <div className='relative flex flex-col justify-center items-center bg-[#004AAD]'>
+    <div className='w-full flex flex-col justify-center items-center bg-[#004AAD]'>
       <div className='mt-8'>
         <h1 className='text-white sm:text-5xl text-4xl font-semibold'>Spin to win rewards</h1>
       </div>
@@ -138,8 +138,7 @@ const SpinWheel = () => {
         </div>
         <p className='font-light mt-2 text-white text-lg'>Daily Spins Left</p>
       </div>
-              <Rewards listPrizeWon={listPrizeWon} />
-
+      <Rewards listPrizeWon={listPrizeWon} />
     </div>
   )
 }
