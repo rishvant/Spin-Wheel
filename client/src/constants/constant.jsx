@@ -2,34 +2,34 @@ import { Nitro } from '../assets/index'
 
 export const PRIZES = [
   {
-    name: 'Tea Set',
+    name: 'Free Virgin Mojito',
     img: Nitro,
-    percentpage: 1 // 1%
+    percentpage: 1
   },
   {
-    name: 'E-Voucher 100k',
+    name: '20% Discount on bill',
     img: Nitro,
-    percentpage: 10 // 10%
+    percentpage: 10
   },
   {
-    name: '100 Points',
+    name: 'Flat 100 % Discount',
     img: Nitro,
-    percentpage: 20 // 20%
+    percentpage: 20
   },
   {
     name: 'Extra Spin',
     img: Nitro,
-    percentpage: 80 // 50%
+    percentpage: 80
   },
   {
-    name: 'Bowl Set',
+    name: 'Better Luck Next Time',
     img: Nitro,
-    percentpage: 1 // 1%
+    percentpage: 1
   },
   {
     name: 'E-Voucher 50k',
     img: Nitro,
-    percentpage: 40 // 40%
+    percentpage: 40
   },
 ]
 
