@@ -138,6 +138,7 @@
   .luckywheel {
     width: 345px;
     height: 345px;
+    margin-left: 40px;
   }
 
   .luckywheel-container {
@@ -156,6 +157,10 @@
   .luckywheel-logo {
     width: 60px;
     height: 60px;
+  }
+
+  .luckywheel-logo div{
+    margin-left: -22px;
   }
 
   .luckywheel-item__content {
