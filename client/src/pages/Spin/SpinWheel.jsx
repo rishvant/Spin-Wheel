@@ -117,6 +117,21 @@ const SpinWheel = () => {
       <div className='mt-8'>
         <h1 className='text-white sm:text-5xl text-4xl font-semibold'>Spin to win rewards</h1>
       </div>
+      <Modal
+        close={() => {
+          setConfigModal({
+            typeModal: 'notify',
+            openModal: false
+          })
+        }}
+        className={configModal.openModal ? '' : 'invisible opacity-0 scale-0 transition'}
+      >
+        {configModal.typeModal === 'notify' ? (
+          <WinningResult winningResult={winningResult} handleContinue={handleContinue} />
+        ) : (
+          <ListPrizeWon listPrizeWon={listPrizeWon} />
+        )}
+      </Modal>
       <LuckyWheel
         id={ID}
         styleRotate={styleRotate}
